@@ -1,8 +1,6 @@
 package com.clinica;
 
 import java.sql.SQLException;
-
-import com.clinica.DataAcessObject.AddressDao;
 import com.clinica.DataAcessObject.ClientDao;
 import com.clinica.Model.Entities.Address;
 import com.clinica.Model.Entities.Animal;
@@ -12,7 +10,6 @@ import com.clinica.Model.Entities.Specie;
 public class Main {
     public static void main(String[] args)  throws SQLException{
         System.out.println("Hello world!");
-        Long clientId = 1L;
 
 
         Address address = new Address();
@@ -76,7 +73,6 @@ public class Main {
         // ClientDao.getInstance().save(client);
         ClientDao.getInstance().saveAnimalsForClient(client);
         
-
    
     }
 }
